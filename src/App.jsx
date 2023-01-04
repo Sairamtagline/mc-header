@@ -12,3 +12,7 @@ const App = () => (
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
+
+export default (el) => {
+  ReactDOM.render(<App />, el);
+};
