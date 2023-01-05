@@ -37,7 +37,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "mc_header",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        cards:"cards@https://mc-cards.pages.dev/remoteEntry.js"
+      },
       exposes: {
         "./App": "./src/App.jsx",
       },
